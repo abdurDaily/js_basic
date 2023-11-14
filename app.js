@@ -23,3 +23,21 @@ range.addEventListener('input', function(){
   let rangeValue = range.value = Number(range.value);
   rangeResult.innerHTML = rangeValue;
 })
+
+
+
+// COLOR 
+let color = document.querySelector('#color');
+let changeColor = document.querySelector('.change-color');
+
+
+changeColor.addEventListener('click', function(){
+    let red = Math.round(Math.random() * 255);
+    let green = Math.round(Math.random() * 255);
+    let blue = Math.round(Math.random() * 255);
+
+    color.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+
+    // console.log(red, green, blue);
+    // alert(red, green, blue);
+})
